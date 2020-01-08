@@ -15,5 +15,5 @@ class pyramid:
         print('Filed is: {:.2f}cm^2'.format(P))
         print('Capacity is {:.2f}cm^3'.format(CP))
         return
-p = pyramid()
-p.get()
+# p = pyramid()
+# p.get()

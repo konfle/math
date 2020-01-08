@@ -2,7 +2,7 @@ class rectangle:
     # Oblicza pole prostokąta z wartości podanej przez usera
     a = int(input('Give lenght first side \n'))
     b = int(input('Give lenght second side \n'))
-    def set(self, a):
+    def set(self, a, b):
         self.a = a
         self.b = b
         return
@@ -13,5 +13,5 @@ class rectangle:
         return
 
 
-r = rectangle()
-r.get()
+# r = rectangle()
+# r.get()
