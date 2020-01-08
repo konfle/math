@@ -8,8 +8,8 @@ class quadrat:
         P=self.a*self.a
         print('Filed is: {:.2f}cm^2'.format(P))
         return
-q=quadrat()
-q.get()
+# q=quadrat()
+# q.get()
 
 
 
