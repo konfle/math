@@ -1,17 +1,23 @@
-class rectangle:
-    # Oblicza pole prostokąta z wartości podanej przez usera
-    a = int(input('Give lenght first side \n'))
-    b = int(input('Give lenght second side \n'))
-    def set(self, a, b):
-        self.a = a
-        self.b = b
-        return
+class Rectangle:
+    # Calculate Rectangle surface area with lengths from user
 
-    def get(self):
-        P = self.a * self.b
-        print('Filed is: {:.2f}cm^2'.format(P))
-        return
+    def __init__(self, first_side, second_side):
+        self.first_side = first_side
+        self.second_side = second_side
 
+    def get_surface_area(self):
+        surface_area = self.first_side * self.second_side
+        return surface_area
 
-# r = rectangle()
-# r.get()
+    def print_information_about_rectangle(self, get_surface_area):
+        information = f'Rectangle has {get_surface_area} cm2 surface area.'
+        return information
+
+class RectangleSecondOption:
+    def __init__(self, first_side, second_side):
+        self.first_side = first_side
+        self.second_side = second_side
+        self.surface_area = first_side * second_side
+
+    def __str__(self):
+        return f'Rectangle has {self.surface_area} cm2 surface area.'

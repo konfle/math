@@ -27,7 +27,7 @@ class Cube:
         return surface_area
 
     # remember that you can make calculation in return statement so you could avoid line 27 and calculation set after return without making another variable. But now your code is more readible
-
+    # KF: yup I will try uses in other class variable, because I want learn to write clean code.
     def volume_of_cube(self):
         volume = self.edge_of_cube**3
         return volume
@@ -35,7 +35,7 @@ class Cube:
     # If you want to use that two method which you create and use it to write description you have to build your own method to print information. Like this:
 
     def print_information_about_cube(self, get_surface_area, volume_of_cube):
-        information = f'Cube has {get_surface_area} cm2 and volume {volume_of_cube}'
+        information = f'Cube has {get_surface_area} cm2 and volume {volume_of_cube} cm3.'
         return information
 
 # Now you have a class blueprint/description so based on it you can build/work on it
@@ -71,7 +71,7 @@ class CubeSecondOption:
 # To get description you should use method __str__ to get object description. But here you can get variable from __init__ method since this method doesn't do anything here.
 
     def __str__(self):
-        return f'Cube has {self.surface_area} cm2 and volume {self.volume}'
+        return f'Cube has {self.surface_area} cm2 and volume {self.volume} cm3.'
 
 # Here based on our blueprint we invoke/build/create an object based on our description set in __init__method and we also set a to 50 units
 '''
