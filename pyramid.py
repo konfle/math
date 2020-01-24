@@ -1,16 +1,15 @@
+import math
 class Pyramid:
     # Calculate tetrahedron surface area and capacity
     def __init__(self, side_length):
         self.side_length = side_length
 
     def get_surface_area(self):
-        import math
         square_root_of_3 = math.sqrt(3)
         surface_area = side_length**2 * square_root_of_3
         return surface_area
 
     def get_capacity_pyramid(self):
-        import math
         square_root_of_2 = math.sqrt(2)
         capacity = ((side_length**3) * square_root_of_2) / 12
         return capacity
@@ -21,7 +20,6 @@ class Pyramid:
 
 class PyramidSecondOption:
     def __init__(self, side_length):
-        import math
         self.side_length = side_length
         square_root_of_3 = math.sqrt(3)
         self.surface_area = side_length**2 * square_root_of_3
